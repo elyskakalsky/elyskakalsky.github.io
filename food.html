@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NYC Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        .section-card {
+            background-color: rgba(255,255,255,0.08);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            margin-bottom: 40px;
+        }
+
+        .list-group-item {
+            background-color: rgba(255,255,255,0.15);
+            color: white;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: rgba(255,255,255,0.25);
+            transform: translateX(6px);
+        }
+
+        table {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: rgba(0,0,0,0.6) !important;
+            color: white !important;
+        }
+
+        td {
+            color: white;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(255,255,255,0.15);
+        }
+
+        .navbar {
+            padding: 15px 30px;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+        }
+
+        .nav-link {
+            margin-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="homepage.html">My New York</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="stuff.html">Stuff to Do</a></li>
+        <li class="nav-item"><a class="nav-link" href="mynewyork.html">My New York</a></li>
+        <li class="nav-item"><a class="nav-link active" href="food.html">Food</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-5">🍕 Best Food Spots in NYC</h1>
+
+    <div class="section-card">
+        <h3 class="mb-4">Must-Try Foods</h3>
+        <ul class="list-group">
+            <li class="list-group-item">New York Style Pizza</li>
+            <li class="list-group-item">Bagels with Cream Cheese</li>
+            <li class="list-group-item">Street Hot Dogs</li>
+            <li class="list-group-item">Cheesecake</li>
+            <li class="list-group-item">Pastrami Sandwiches</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h3 class="mb-4">Popular Restaurants</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead>
+                    <tr>
+                        <th>Restaurant</th>
+                        <th>Location</th>
+                        <th>Type of Food</th>
+                        <th>Price Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joe's Pizza</td>
+                        <td>Manhattan</td>
+                        <td>Pizza</td>
+                        <td><span class="badge bg-success">$</span></td>
+                    </tr>
+                    <tr>
+                        <td>Katz's Delicatessen</td>
+                        <td>Lower East Side</td>
+                        <td>Deli</td>
+                        <td><span class="badge bg-warning text-dark">$$</span></td>
+                    </tr>
+                    <tr>
+                        <td>7th Street Burger</td>
+                        <td>Multiple Locations</td>
+                        <td>Burgers</td>
+                        <td><span class="badge bg-warning text-dark">$$</span></td>
+                    </tr>
+                    <tr>
+                        <td>Junior's</td>
+                        <td>Brooklyn</td>
+                        <td>Cheesecake</td>
+                        <td><span class="badge bg-warning text-dark">$$</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    2026 My New York | Ely R. Skakalsky
+</footer>
+
+</body>
+</html>
